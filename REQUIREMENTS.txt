@@ -1,0 +1,116 @@
+# Bill Splitter App - System Requirements
+
+## Minimum System Requirements
+
+### Hardware
+- Processor: Intel i3 / AMD Ryzen 3 or better
+- RAM: 4GB minimum, 8GB recommended
+- Storage: 2GB free space minimum
+- Internet: Stable connection required for initial setup
+
+### Operating System
+- macOS 10.15 (Catalina) or later (for iOS development)
+- Windows 10/11 (for Android development)
+- Linux (Ubuntu 18.04+, for Android development)
+
+## Software Requirements
+
+### Essential (Required for all platforms)
+1. Node.js v16.0.0 or later
+   - Download: https://nodejs.org/
+   
+2. npm v7.0.0 or later (comes with Node.js)
+   - Verify: npm --version
+
+3. Git (optional, for version control)
+   - Download: https://git-scm.com/
+
+### For iOS Development (Mac only)
+4. Xcode 13.0 or later
+   - Install from: Mac App Store
+   - Size: ~12GB
+   - Command Line Tools required
+
+5. CocoaPods (installed automatically with Xcode)
+
+### For Android Development
+6. Android Studio Arctic Fox (2020.3.1) or later
+   - Download: https://developer.android.com/studio
+   - Size: ~1GB
+   - Android SDK Platform 33 (Android 13)
+   - Android SDK Build-Tools 33.0.0
+   - Android Emulator (for testing)
+
+### For Web Development
+7. Modern Web Browser
+   - Chrome 90+ (recommended)
+   - Firefox 88+
+   - Safari 14+
+   - Edge 90+
+
+## External Services (API Keys Required)
+
+### Firebase (Required for Authentication)
+- Free tier available
+- Account: https://console.firebase.google.com/
+- Features used:
+  - Authentication (Email/Password)
+  - (Optional) Firestore for cloud sync
+
+### Google Gemini AI (Required for Receipt Scanning)
+- Free tier: 60 requests per minute
+- Account: https://makersuite.google.com/
+- API Key required
+
+## Network Requirements
+
+- Stable internet connection for:
+  - Installing npm packages (~100MB download)
+  - Firebase authentication
+  - Gemini AI API calls
+  - Expo development server
+
+## Browser Requirements (for Web version)
+
+- JavaScript enabled
+- Local Storage enabled
+- Camera access (for receipt scanning)
+- Cookies enabled (for authentication)
+
+## Mobile Device Requirements (for Physical Testing)
+
+### iOS
+- iOS 13.0 or later
+- Expo Go app from App Store
+- Same WiFi network as development computer
+
+### Android
+- Android 5.0 (Lollipop) or later
+- Expo Go app from Google Play
+- Same WiFi network as development computer
+
+## Development Environment
+
+### Recommended
+- VS Code or other code editor
+- Terminal/Command Prompt access
+- ~2GB free RAM during development
+- Port 8081/8082 available (for Expo DevServer)
+
+## Optional Tools
+
+- React DevTools (browser extension)
+- Expo CLI (now integrated with npx)
+- Android Device Bridge (adb) for Android debugging
+
+## Package Dependencies (Auto-installed)
+
+Listed in package.json:
+- React 19.1.0
+- React Native 0.81.5
+- Expo SDK 54
+- TypeScript 5.9.2
+- Firebase 12.6.0
+- And 25+ other supporting packages
+
+Total install size: ~400MB (node_modules)

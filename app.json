@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "BillSplitter",
-    "slug": "BillSplitter",
+    "name": "Splitsmart",
+    "slug": "Splitsmart",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -13,7 +13,15 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "LSApplicationQueriesSchemes": [
+          "upi",
+          "gpay",
+          "phonepe",
+          "paytm"
+        ]
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -21,10 +29,25 @@
         "backgroundColor": "#ffffff"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.intraday.Splitsmart"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "9f41f7ac-23e9-4ff4-9415-862d015f843e"
+      }
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Allow Splitsmart to access your camera to scan receipts."
+        }
+      ],
+      "expo-font"
+    ]
   }
 }
