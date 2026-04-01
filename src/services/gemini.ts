@@ -4,7 +4,7 @@ import { ReceiptData } from './ocr';
 
 // Initialize Gemini API
 // TODO: Replace with user's API key or fetch from secure storage/config
-const API_KEY = "AIzaSyD8F8t-NSTTlIksM_lX1hu9aG6xSr08Oh8";
+const API_KEY = "";
 
 const genAI = new GoogleGenerativeAI(API_KEY);
 
